@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ubuntu_image:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./dir1:/dir1
+    tty: true
